@@ -159,10 +159,10 @@ export default function Sidebar() {
                     exit={{ height: 0, opacity: 0 }}
                     className="ml-6 mt-2 space-y-1 overflow-hidden"
                   >
-                    <li><Link to="/s2h/tickets/create" className={subLink}>Create Items</Link></li>
-                    <li><Link to="/s2h/tickets/view" className={subLink}>Get Items</Link></li>
-                    <li><Link to="/s2h/tickets/update" className={subLink}>Update Items</Link></li>
-                    <li><Link to="/s2h/tickets/view-all" className={subLink}>Assign Items</Link></li>
+                    <li><Link to="*" className={subLink}>Create Items</Link></li>
+                    <li><Link to="*" className={subLink}>Get Items</Link></li>
+                    <li><Link to="*" className={subLink}>Update Items</Link></li>
+                    <li><Link to="*" className={subLink}>Assign Items</Link></li>
                   </motion.ul>
                 )}
               </AnimatePresence>
@@ -191,9 +191,9 @@ export default function Sidebar() {
                   >
                     
                       
-                      <li><Link to="/s2h/handover/my-pending" className={subLink}>My Pending Handovers</Link></li>
-                <li><Link to="/s2h/handover/create" className={subLink}>Create Handover</Link></li>
-                <li><Link to="/s2h/handover/all" className={subLink}>View Team Handovers</Link></li>
+                      <li><Link to="infra/error/underdevelopment" className={subLink}>My Pending Handovers</Link></li>
+                <li><Link to="infra/error/underdevelopment" className={subLink}>Create Handover</Link></li>
+                <li><Link to="infra/error/underdevelopment" className={subLink}>View Team Handovers</Link></li>
                     
                   </motion.ul>
                 )}

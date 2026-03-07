@@ -23,8 +23,8 @@ const Layout = () => {
     
 
     {/* Page Content */}
-    <main className="mt-4">
-      <Outlet />
+    <main >
+      <Outlet  />
     </main>
   </div>
 </div>

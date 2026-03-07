@@ -111,11 +111,11 @@ const GetTickets = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-10 py-6">
+    <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-10 py-6 ">
 
       {/* HEADER */}
-      <div className="flex flex-wrap justify-between items-center mb-6 gap-3">
-        <h2 className="text-2xl font-semibold">Tickets</h2>
+      <div className="flex flex-wrap justify-between items-center mb-6 gap-3 mt-5">
+        <h2 className="text-2xl font-semibold text-green-600">INFRA Tickets</h2>
 
         <div className="flex gap-2 flex-wrap">
 

@@ -9,6 +9,7 @@ import Todo from './pages/todos/Todo'
 import CreateTicket from './pages/ticket/CreateTicket'
 import GetTickets from './pages/ticket/GetTickets'
 import UpdateTicket from './pages/ticket/UpdateTicket'
+import UnderDevelopment from './pages/error/UnderDevelopment'
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/infra/tickets/create" element={<CreateTicket/>}/>
         <Route path="/infra/tickets/update" element={<UpdateTicket/>}/>
         <Route path="*" element={<PageNotFound />} />
+        <Route path="infra/error/underdevelopment" element={<UnderDevelopment/>} />
         </Route>
       </Routes>
     </BrowserRouter>

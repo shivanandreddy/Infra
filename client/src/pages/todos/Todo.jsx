@@ -64,9 +64,9 @@ const Todo = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 px-4 sm:px-6 lg:px-10 py-6 mt-2">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 px-4 sm:px-6 lg:px-10 py-6 ">
       
-      <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-800">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-800 mt-5">
         Todo List
       </h1>
 

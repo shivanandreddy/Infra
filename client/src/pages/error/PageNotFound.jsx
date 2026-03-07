@@ -10,7 +10,7 @@ const PageNotFound = () => {
   }, []);
 
   return (
-   <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-500">
+   <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-10 py-6 mt-5">
 
   {/* Soft Floating Shapes */}
   <div className="absolute top-20 left-20 w-40 h-40 bg-blue-100 dark:bg-blue-800 opacity-40 rounded-full animate-float"></div>
@@ -24,16 +24,16 @@ const PageNotFound = () => {
         }`}
       >
         {/* 404 Number */}
-        <h1 className="text-[120px] sm:text-[160px] font-extrabold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent animate-gradient-move">
+        <h1 className="text-[120px] sm:text-[160px] font-extrabold bg-gradient-to-r from-blue-600 via-red-600 to-blue-600 bg-clip-text text-transparent animate-gradient-move">
           404
         </h1>
 
         {/* Message */}
-        <h2 className="text-2xl sm:text-3xl font-semibold text-slate-800 dark:text-slate-200 mb-4 animate-slide-down">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-slate-800 dark:text-red-200 mb-4 animate-slide-down">
           Oops! Page Not Found
         </h2>
 
-        <p className="text-slate-600 dark:text-slate-400 max-w-md mx-auto mb-8 animate-slide-up">
+        <p className="text-black-600 dark:text-blue-400 max-w-md mx-auto mb-8 animate-slide-up">
           The page you are looking for might have been removed, renamed, 
           or is temporarily unavailable. Please check the URL or return 
           to the homepage.
@@ -41,10 +41,10 @@ const PageNotFound = () => {
 
         {/* Button */}
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/infra/home")}
           className="px-6 py-3 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white rounded-xl shadow-lg transition-all duration-300"
         >
-          Go Back Home
+          Go back to Dashboard
         </button>
       </div>
 

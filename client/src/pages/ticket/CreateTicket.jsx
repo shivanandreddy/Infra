@@ -58,7 +58,7 @@ const CreateTicket = () => {
   return (
     <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-10 py-6">
 
-      <h2 className="text-2xl font-semibold mb-6 text-green-500">
+      <h2 className="text-2xl font-semibold mb-6 text-green-500 mt-5">
         Create Ticket
       </h2>
 
