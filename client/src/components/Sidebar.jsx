@@ -129,9 +129,9 @@ export default function Sidebar() {
                     exit={{ height: 0, opacity: 0 }}
                     className="ml-6 mt-2 space-y-1 overflow-hidden"
                   >
-                    <li><Link to="/s2h/points/create" className={subLink}>Create Ticket</Link></li>
-                <li><Link to="/s2h/points/view" className={subLink}>Get Tickets</Link></li>
-                <li><Link to="/s2h/points/update" className={subLink}>Update Ticket</Link></li>
+                    <li><Link to="/infra/tickets/create" className={subLink}>Create Ticket</Link></li>
+                <li><Link to="/infra/tickets" className={subLink}>Get Tickets</Link></li>
+                <li><Link to="/infra/tickets/update" className={subLink}>Update Ticket</Link></li>
 
                   </motion.ul>
                 )}
@@ -145,7 +145,7 @@ export default function Sidebar() {
                 className="w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800/70 hover:text-white transition"
               >
                 <Tickets size={18} />
-                <span className="truncate">Ticket Management</span>
+                <span className="truncate">Infra Inventory</span>
                 <span className="ml-auto text-xs">
                   {openMenu === "tickets" ? "▲" : "▼"}
                 </span>
@@ -159,10 +159,10 @@ export default function Sidebar() {
                     exit={{ height: 0, opacity: 0 }}
                     className="ml-6 mt-2 space-y-1 overflow-hidden"
                   >
-                    <li><Link to="/s2h/tickets/create" className={subLink}>Create Ticket</Link></li>
-                    <li><Link to="/s2h/tickets/view" className={subLink}>Get Ticket</Link></li>
-                    <li><Link to="/s2h/tickets/update" className={subLink}>Update Ticket</Link></li>
-                    <li><Link to="/s2h/tickets/view-all" className={subLink}>View All Tickets</Link></li>
+                    <li><Link to="/s2h/tickets/create" className={subLink}>Create Items</Link></li>
+                    <li><Link to="/s2h/tickets/view" className={subLink}>Get Items</Link></li>
+                    <li><Link to="/s2h/tickets/update" className={subLink}>Update Items</Link></li>
+                    <li><Link to="/s2h/tickets/view-all" className={subLink}>Assign Items</Link></li>
                   </motion.ul>
                 )}
               </AnimatePresence>

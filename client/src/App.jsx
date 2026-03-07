@@ -6,6 +6,9 @@ import PageNotFound from './pages/error/PageNotFound'
 import Layout from './pages/Layout'
 import ProtectedRoute from './components/ProtectedRoute'
 import Todo from './pages/todos/Todo'
+import CreateTicket from './pages/ticket/CreateTicket'
+import GetTickets from './pages/ticket/GetTickets'
+import UpdateTicket from './pages/ticket/UpdateTicket'
 
 
 const App = () => {
@@ -17,6 +20,11 @@ const App = () => {
         <Route index element={<Dashboard />} />
         <Route path="/infra/home" element={<Dashboard/>} />
         <Route path="/infra/todos" element={<Todo/>} />
+
+        {/* Ticket Routes */}
+        <Route path="/infra/tickets/" element={<GetTickets/>}/>
+        <Route path="/infra/tickets/create" element={<CreateTicket/>}/>
+        <Route path="/infra/tickets/update" element={<UpdateTicket/>}/>
         <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
