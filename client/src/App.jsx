@@ -10,6 +10,10 @@ import CreateTicket from './pages/ticket/CreateTicket'
 import GetTickets from './pages/ticket/GetTickets'
 import UpdateTicket from './pages/ticket/UpdateTicket'
 import UnderDevelopment from './pages/error/UnderDevelopment'
+import AddApp from './pages/myapps/AddApp'
+import Register from './pages/user/Register'
+import GetUsers from './pages/user/GetUsers'
+import CreateHandover from './pages/handover/CreateHandover'
 
 
 const App = () => {
@@ -22,12 +26,23 @@ const App = () => {
         <Route path="/infra/home" element={<Dashboard/>} />
         <Route path="/infra/todos" element={<Todo/>} />
 
+        {/* User Routes */}
+        <Route path="/infra/users/register" element={<Register />} />
+        <Route path="/infra/users/all" element={<GetUsers />} />
+
+        {/* MyApps Routes */}
+        <Route path="/infra/myapps" element={<AddApp/>}></Route>
+        
         {/* Ticket Routes */}
         <Route path="/infra/tickets/" element={<GetTickets/>}/>
         <Route path="/infra/tickets/create" element={<CreateTicket/>}/>
         <Route path="/infra/tickets/update" element={<UpdateTicket/>}/>
         <Route path="*" element={<PageNotFound />} />
         <Route path="infra/error/underdevelopment" element={<UnderDevelopment/>} />
+
+        {/* Handover Routes */}
+        <Route path="/infra/handover" element={<CreateHandover/>} />
+
         </Route>
       </Routes>
     </BrowserRouter>

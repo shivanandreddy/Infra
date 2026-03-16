@@ -55,9 +55,9 @@ const Login = () => {
         </div>
 
         {/* Right Login Form Section */}
-        <div className="w-full md:w-1/2 p-6 sm:p-10 relative">
+        <div className="w-full md:w-1/2 p-6 sm:p-10 relative" >
           {/* Animated background gradient */}
-          <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-white via-blue-50 to-indigo-50 animate-gradient-move rounded-3xl"></div>
+          <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-white via-blue-50 to-indigo-50 animate-gradient-move "></div>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-8 animate-slide-down">
             Infra IT Services

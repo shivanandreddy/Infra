@@ -29,11 +29,11 @@ const PageNotFound = () => {
         </h1>
 
         {/* Message */}
-        <h2 className="text-2xl sm:text-3xl font-semibold text-slate-800 dark:text-red-200 mb-4 animate-slide-down">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-slate-500 dark:text-red-900 mb-4 animate-slide-down">
           Oops! Page Not Found
         </h2>
 
-        <p className="text-black-600 dark:text-blue-400 max-w-md mx-auto mb-8 animate-slide-up">
+        <p className="text-red-600 dark:text-black-900 max-w-md mx-auto mb-8 animate-slide-up">
           The page you are looking for might have been removed, renamed, 
           or is temporarily unavailable. Please check the URL or return 
           to the homepage.

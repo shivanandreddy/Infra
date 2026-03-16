@@ -1,9 +1,6 @@
 
 export const workgroups = [
     "IT",
-    "HR",
-    "Finance",
-    "Sales",
     "Admin",
     
 ]

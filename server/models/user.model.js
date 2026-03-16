@@ -31,6 +31,11 @@ const userSchema = new mongoose.Schema({
         required: true,
         enum: workgroups
     },
+    status: {
+        type: String,
+        enum: ['Active', 'Inactive'],
+        default: 'Active'
+    },
     links:{
         type: [{
             name: String,
